@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --brand: 211 100% 40%;
+  --radius: 0.75rem;
+}
+
+* {
+  border-color: hsl(var(--border, 214 32% 91%));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utility for subtle section separation */
+.section {
+  @apply py-16 md:py-24;
+}
